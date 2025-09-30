@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulario de Contacto Profesional</title>
+</head>
+<body>
+
+  <h1>Contacto</h1>
+
+  <form action="https://formsubmit.co/tu-correo@example.com" method="POST">
+    
+    <label for="nombre">Nombre completo *</label><br>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required minlength="3" /><br><br>
+
+    <label for="email">Correo electrónico *</label><br>
+    <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required /><br><br>
+
+    <label for="telefono">Teléfono</label><br>
+    <input type="tel" id="telefono" name="telefono" placeholder="+51 987654321" pattern="[0-9+\-\s]{7,15}" /><br><br>
+
+    <label for="asunto">Asunto *</label><br>
+    <select id="asunto" name="asunto" required>
+      <option value="" disabled selected>Selecciona un motivo</option>
+      <option value="Consulta general">Consulta general</option>
+      <option value="Soporte técnico">Soporte técnico</option>
+      <option value="Sugerencia">Sugerencia</option>
+      <option value="Otro">Otro</option>
+    </select><br><br>
+
+    <label for="mensaje">Mensaje *</label><br>
+    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required minlength="10"></textarea><br><br>
+
+    <button type="submit">Enviar mensaje</button>
+  </form>
+
+</body>
+</html>
